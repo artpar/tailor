@@ -4,6 +4,6 @@
 ```
 go get tailor
 go get github.com/artpar/tailor
-go build .
+make
 ./tailor view -f nginx
 ```
