@@ -1,0 +1,42 @@
+[
+  {
+    "Filename": "nginx_error.log",
+    "DirectoryPath": "/var/log/nginx/",
+    "ApplicationName": "nginx",
+    "FileType": "log",
+    "Tags": [
+      "error"
+    ],
+    "OperatingSystem": "linux"
+  },
+  {
+    "Filename": "nginx_error.log",
+    "DirectoryPath": "/var/log/nginx/",
+    "ApplicationName": "nginx",
+    "FileType": "log",
+    "Tags": [
+      "error"
+    ],
+    "OperatingSystem": "darwin"
+  },
+  {
+    "Filename": "error.log",
+    "DirectoryPath": "/var/log/nginx/",
+    "ApplicationName": "nginx",
+    "FileType": "log",
+    "Tags": [
+      "error"
+    ],
+    "OperatingSystem": "debian"
+  },
+  {
+    "Filename": "access.log",
+    "DirectoryPath": "/var/log/nginx/",
+    "ApplicationName": "nginx",
+    "FileType": "log",
+    "Tags": [
+      "access"
+    ],
+    "OperatingSystem": "debian"
+  }
+]
