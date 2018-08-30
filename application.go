@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"strings"
-
 	"github.com/urfave/cli"
 	"runtime"
 	"os"

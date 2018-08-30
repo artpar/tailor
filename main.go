@@ -4,11 +4,8 @@ import (
 	"github.com/urfave/cli"
 	"fmt"
 	"os"
-	"github.com/hpcloud/tail"
-	"log"
 	"io/ioutil"
 	"encoding/json"
-	"sync"
 )
 
 type LogfileLocation struct {
@@ -32,7 +29,7 @@ func main() {
 	}
 	err = json.Unmarshal(contents, &conf)
 	if err != nil {
-		fmt.Printf("Failed to find config")
+		fmt.Printf("Failed to read config")
 		os.Exit(1)
 	}
 
@@ -41,8 +38,8 @@ func main() {
 	}
 
 	cliManager := cli.NewApp()
-	cliManager.Name = "zlogger"
-	cliManager.Usage = "watch logs from various applications"
+	cliManager.Name = "tailor"
+	cliManager.Usage = "watch logs from applications by name"
 
 	cliManager.Commands = []cli.Command{
 		{
@@ -69,7 +66,7 @@ func main() {
 		{
 			Name:    "list",
 			Aliases: []string{"l"},
-			Usage:   "list supported applications",
+			Usage:   "list names of supported applications",
 			Action:  application.List,
 		},
 	}
